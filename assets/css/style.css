@@ -186,12 +186,14 @@ section
         color: #39a6b2;
         width: 80%;
         font-size: 20px;
-        margin: 0 auto;
+        margin: 0 auto 0 auto;
     }
 
 .steps  
     {
         text-align: center;
+        background-color: #fce138;
+        
     }
 
 .steps div
@@ -281,4 +283,53 @@ section
     {
         text-align: right;
     }
+/* end styling trainer info*/
 
+/* start styling reach out section*/
+.contact
+    {
+        text-align: center;
+        background-color: #024e76;
+    }
+
+.contact h2
+    {
+        color: #fce138;
+    }
+
+.contact-info iframe
+    {
+        width: 350px;
+        height: 350px;
+    }
+
+.contact-info div
+    {
+        width: 400px;
+        display: inline-block;
+        text-align: left;
+        vertical-align: top;
+        margin: 30px 0 0 60px;
+    }
+
+.contact h3 
+    {
+        color: #fce138;
+        font-size: 32px;
+    }
+
+.contact-info p, .contact-info address 
+    {
+        margin: 20px 0;
+        line-height: 1.5;
+        font-size: 15px;
+        font-style: normal;
+        color: white;
+    }
+
+.contact-info a
+    {
+        color: #fce138;
+    }
+
+/*reach out style end*/
