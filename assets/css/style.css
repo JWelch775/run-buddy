@@ -87,12 +87,9 @@ header nav ul li a
     {
         background-color: #fce138;
         padding: 20px;
-        width: 40%;
         color: #024e76;
         border: solid 3px #024e76;
-        position: absolute;
-        bottom: 120px;
-        right: 140px;
+        width: 40%;
         margin: 3.5%;
     }
 
