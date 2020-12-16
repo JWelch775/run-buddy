@@ -334,6 +334,22 @@ section
     }
 /* end styling trainer info*/
 
+/* service plan grid style */
+.service-grid-container
+    {
+        display: grid;
+    }
+
+.service-grid-item
+    {
+        width: 200px;
+        height: 50px;
+        background-color: orange;
+        border: solid;
+        color: black;
+    }
+
+
 /* start styling reach out section*/
 .contact
     {
