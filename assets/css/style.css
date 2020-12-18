@@ -391,9 +391,81 @@ section
         flex: 1;
     }
 
-.trainer img
+.trainer-img
     {
         width: 100%;
+        min-height: 300px;
+        background-size: cover;
+        display: flex;
+        padding: 15px;
+        align-items: flex-end;
+    }
+
+.trainer-img div
+    {
+        overflow: hidden;
+    }
+
+.trainer-img h3
+    {
+        position: relative;
+        z-index: 10;
+        font-size: 28px;
+        margin-bottom: 5px;
+        top: 200px;
+        transition: top;
+        transition-timing-function: 0.6s;
+    }
+
+.trainer-img h4
+    {
+        position: relative;
+        z-index: 10;
+        font-size: 22px;
+        font-weight: lighter;
+        top: 200px;
+        transition: top;
+        transition-timing-function: 0.6s;
+    }
+.trainer-img::after
+    {
+        content: "";
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(rgba(252, 225, 56, 0.15), #024e76);
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: gradient, 0.5s;
+    }
+
+.trainer:hover .trainer-img::after
+    {
+        opacity: 1;
+    }
+
+.trainer:hover .trainer-img h3, .trainer:hover .trainer-img h4
+    {
+        top: 0px;
+    }
+
+.trainer-1
+    {
+        background-image: url("../images/trainer-1.jpg");
+        position: relative;
+    }
+
+.trainer-2
+    {
+        background-image: url("../images/trainer-2.jpg");
+        position: relative;
+    }
+
+.trainer-3
+    {
+        background-image: url("../images/trainer-3.jpg");
+        position: relative;
     }
 
 .trainer-bio
@@ -405,6 +477,7 @@ section
 .trainer-bio h3
     {
         font-size: 28px;
+        display: none;
     }
 
 .trainer-bio h4
@@ -412,6 +485,7 @@ section
         font-weight: lighter;
         font-size: 22px;
         margin-bottom: 15px;
+        display: none;
     }
 
 .trainer-bio p
@@ -469,7 +543,7 @@ section
         justify-content: center;
         text-align: center;
     }
-
+*
 /* specific match */
 .service-grid-item.basic
     {
@@ -644,7 +718,9 @@ section
         {
             flex: 1 100%;
         }
+
 }
+
 
 @media screen and (max-width:768px)
 {
@@ -673,6 +749,16 @@ section
     .step-text
         {
             flex: 100%;
+        }
+
+    .trainer-img h3, .trainer-img h4, .trainer-img::after    
+        {
+            display: none;
+        }
+
+    .trainer-bio h3, .trainer-bio h4 
+        {
+            display: inline;
         }
 }
 
